@@ -1,5 +1,4 @@
 # JavaAgain
-java again
 
 https://github.com/lengqie/JavaAgain/tree/main/src/cn/lanqiao
 

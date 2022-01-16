@@ -1,4 +1,4 @@
-package com.interview;
+package com.javaguide;
 
 import java.util.HashMap;
 
