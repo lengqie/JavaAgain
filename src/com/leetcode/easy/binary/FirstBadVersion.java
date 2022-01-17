@@ -22,7 +22,8 @@ public class FirstBadVersion {
     	while(left < right) {
     		// 1 <= bad <= n <= 2^31 - 1
 //    		int mid = (left + right) /2;
-    		int mid = left /2 + right /2;
+//    		int mid = left /2 + right /2;
+    		int mid = left + (right - left) /2;
     		if (isBadVersion(mid)) {
 				right = mid;
 			} else {
