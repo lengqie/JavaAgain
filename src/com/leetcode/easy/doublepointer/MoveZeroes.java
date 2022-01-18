@@ -1,0 +1,10 @@
+package com.leetcode.easy.doublepointer;
+
+public class MoveZeroes {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
