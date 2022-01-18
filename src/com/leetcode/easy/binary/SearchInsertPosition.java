@@ -5,7 +5,7 @@ package com.leetcode.easy.binary;
  * 请必须使用时间复杂度为 O(log n) 的算法。
  */
 
-public class SearchInsertPoaition {
+public class SearchInsertPosition {
 	public static void main(String[] args) {
 		int[] nums = new int[]{1,3,5,6};
 		int target = 2;
@@ -16,7 +16,7 @@ public class SearchInsertPoaition {
     	int left = 0;
     	int right = nums.length  -1;
     	
-    	while(left < right) {
+    	while(left <= right) {
     		int mid = (left + right) / 2;
     		if (nums[mid] > target) {
 				right = mid - 1;
