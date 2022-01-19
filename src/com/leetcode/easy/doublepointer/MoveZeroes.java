@@ -54,7 +54,7 @@ public class MoveZeroes {
 		}
     }
     
-    // 前后指针  (存在 数据损失的问题)
+    // 前后指针  (当 出现连续 0时 存在 数据损失的问题)
     @Deprecated
     public static void moveZeroes3(int[] nums) {
     	int left = 0;
