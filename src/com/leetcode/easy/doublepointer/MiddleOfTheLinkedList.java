@@ -6,21 +6,23 @@ package com.leetcode.easy.doublepointer;
  *给定一个头结点为 head 的非空单链表，返回链表的中间结点。
  *如果有两个中间结点，则返回第二个中间结点。
  */
-class ListNode {
- 	int val;
- 	ListNode next;
- 	ListNode() {}
- 	ListNode(int val) { this.val = val; }
- 	ListNode(int val, ListNode next) { this.val = val; this.next = next; }
- }
 
 public class MiddleOfTheLinkedList {
+	
+	class ListNode {
+	 	int val;
+	 	ListNode next;
+	 	ListNode() {}
+	 	ListNode(int val) { this.val = val; }
+	 	ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+	 }
+
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 //		ListNode l = new ListNode();
-		System.out.println(5 >> 1);
-		System.out.println(6 >> 1); 
+//		System.out.println(5 >> 1);
+//		System.out.println(6 >> 1); 
 	}
 	
 	// 快慢指针
