@@ -1,4 +1,4 @@
-package com.leetcode.easy.doublepointer;
+package com.leetcode.plan20day.doublepointer;
 
 /**
  * 
@@ -9,7 +9,7 @@ package com.leetcode.easy.doublepointer;
 
 public class RemoveNthNodeFromEndOfList {
 	
-	class ListNode {
+	static class ListNode {
 	 	int val;
 	 	ListNode next;
 	 	ListNode() {}
@@ -19,7 +19,22 @@ public class RemoveNthNodeFromEndOfList {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-//		ListNode l = new ListNode();
+		ListNode h = new ListNode(1);
+		ListNode p = h;
+		for (int i = 2; i < 6; i++) {
+			 ListNode temp = new ListNode(i);
+			 p.next = temp ;
+			 p = p.next;
+
+		}
+		removeNthFromEnd2(h,4);
+		
+		p = h;
+		while (p !=null) {
+			System.out.println(p.val);
+			p = p.next;
+		}
+		
 	}
     public static ListNode removeNthFromEnd(ListNode head, int n) {
     	ListNode fast = head;
@@ -39,21 +54,21 @@ public class RemoveNthNodeFromEndOfList {
 
     }
     public static ListNode removeNthFromEnd2(ListNode head, int n) {
-    	int len = 0;
-    	ListNode p = head;
-    	while (p.next != null) {
-			p = p.next;
-			len ++;
-		}
-    	p = head;
-    	int i =0;
-    	while(p.next != null) {
-    		if (i == (len + 1 - n)) {
-    			p.next =p.next.next;
-    		}
-    		i ++;
-    		p = p.next;
-    	}
-    	return p;
+
+        ListNode p = head;
+        int  len = 0;
+        while(p != null){
+            p = p.next;
+            len ++;
+        }
+        int index = len -n ;
+        if(index == 0)
+            return head.next;
+        p =head;        
+        for(int i = 1;i < index ;i++){
+            p = p.next;
+        }
+        p.next = p.next.next;
+        return head;
     }
 }

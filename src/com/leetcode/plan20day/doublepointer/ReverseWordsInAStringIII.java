@@ -1,4 +1,4 @@
-package com.leetcode.easy.doublepointer;
+package com.leetcode.plan20day.doublepointer;
 
 /**
  * 

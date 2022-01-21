@@ -1,4 +1,4 @@
-package com.leetcode.easy.doublepointer;
+package com.leetcode.plan20day.doublepointer;
 
 /**
  *给定一个已按照 非递减顺序排列  的整数数组 numbers ，请你从数组中找出两个数满足相加之和等于目标数 target 。

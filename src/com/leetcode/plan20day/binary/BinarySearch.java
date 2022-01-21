@@ -5,7 +5,7 @@
  * 如果目标值存在返回下标，否则返回 -1。 
  */
 
-package com.leetcode.easy.binary;
+package com.leetcode.plan20day.binary;
 
 public class BinarySearch {
 	public static void main(String[] args) {
