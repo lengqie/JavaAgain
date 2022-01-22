@@ -67,6 +67,7 @@ public class LongestSubstringWithoutRepeatingCharacters {
 	    Set<Character> window = new HashSet<>();
 	    while (right < n) {
 	        char rightChar = s.charAt(right);
+	        // 如果出现重复的 字符
 	        while (window.contains(rightChar)) {
 	            window.remove(s.charAt(left));
 	            left++;
