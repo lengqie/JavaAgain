@@ -1,4 +1,4 @@
-package com.leetcode.plan20day.bfsanddfs;
+package com.leetcode.plan.algorithm.bfsanddfs;
 
 import java.util.LinkedList;
 import java.util.Queue;

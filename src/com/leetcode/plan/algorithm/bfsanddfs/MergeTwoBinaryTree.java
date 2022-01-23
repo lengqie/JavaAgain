@@ -1,4 +1,4 @@
-package com.leetcode.plan20day.bfsanddfs;
+package com.leetcode.plan.algorithm.bfsanddfs;
 
 /**
  合并二叉树

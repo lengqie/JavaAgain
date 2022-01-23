@@ -1,4 +1,4 @@
-package com.leetcode.plan20day.slidingwindow;
+package com.leetcode.plan.algorithm.slidingwindow;
 
 /**
  * 字符串的排列

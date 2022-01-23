@@ -1,4 +1,4 @@
-package com.leetcode.plan20day.slidingwindow;
+package com.leetcode.plan.algorithm.slidingwindow;
 
 import java.util.Arrays;
 import java.util.HashMap;
