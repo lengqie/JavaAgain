@@ -14,6 +14,7 @@ public class FloodFill {
     public static void main(String[] args) {
 		
 	}
+    // BFS
     public static int[][] floodFill(int[][] image, int sr, int sc, int newColor) {
         int[] dx = {1, 0, 0, -1};
         int[] dy = {0, 1, -1, 0};
@@ -22,6 +23,7 @@ public class FloodFill {
         if (currColor == newColor) {
             return image;
         }
+        
         int n = image.length, m = image[0].length;
         Queue<int[]> queue = new LinkedList<int[]>();
         queue.offer(new int[]{sr, sc});
