@@ -27,8 +27,7 @@ public class ContainsDuplicate {
     }
     public static boolean containsDuplicate2(int[] nums){
         HashSet<Integer> hashSet = new HashSet<>();
-        for (int n :
-                nums) {
+        for (int n : nums) {
             hashSet.add(n);
         }
         return hashSet.size() != nums.length;
