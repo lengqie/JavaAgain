@@ -1,4 +1,4 @@
-package com.leetcode.plan.algorithm.recursion;
+package com.leetcode.plan.algorithm.backtracking;
 
 import java.util.*;
 
