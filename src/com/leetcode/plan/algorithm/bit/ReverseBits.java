@@ -20,6 +20,7 @@ package com.leetcode.plan.algorithm.bit;
 public class ReverseBits {
     public int reverseBits(int n) {
         int rev = 0;
+        // 将 nn 视作一个长为 3232 的二进制串，从低位往高位枚举 nn 的每一位，将其倒序添加到翻转结果 rev 中。
         for (int i = 0; i < 32 && n != 0; ++i) {
             rev |= (n & 1) << (31 - i);
             n >>>= 1;
