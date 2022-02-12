@@ -20,10 +20,10 @@ public class ContainsDuplicate {
         Arrays.sort(nums);
         for (int i = 0; i < nums.length - 1; i++) {
             if (nums[i] == nums[i + 1]){
-                return false;
+                return true;
             }
         }
-        return true;
+        return false;
     }
     public static boolean containsDuplicate2(int[] nums){
         HashSet<Integer> hashSet = new HashSet<>();
