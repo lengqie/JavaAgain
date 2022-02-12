@@ -26,7 +26,7 @@ public class RecursionDome {
         int[] cur =removeFirst(ints);
         int subMax =getMax(cur);
         /*
-         * 找到最后两个数的最大值，再和最后第三个比较，以此类推...
+         找到最后两个数的最大值，再和最后第三个比较，以此类推...
          */
         return Math.max(ints[0],subMax);
     }

@@ -3,8 +3,8 @@ package com.leetcode.plan.algorithm.doublepointer;
 import java.util.Arrays;
 
 /**
- * 有序数组的平方
- * 给你一个按 非递减顺序 排序的整数数组 nums，返回 每个数字的平方 组成的新数组，要求也按 非递减顺序 排序。
+ 有序数组的平方
+ 给你一个按 非递减顺序 排序的整数数组 nums，返回 每个数字的平方 组成的新数组，要求也按 非递减顺序 排序。
  */
 
 public class SquaresOfaSortedArray {
@@ -29,12 +29,12 @@ public class SquaresOfaSortedArray {
 		int index = right;
 		int[] result = new int[nums.length];
 		while(left <= right) {
-			if (nums[left] * nums[left] > nums[right] * nums[right]) {
-				result[index --] = nums[left] * nums[left ++];
+			if (nums[left] nums[left] > nums[right] nums[right]) {
+				result[index --] = nums[left] nums[left ++];
 //				index --;
 //				left ++;
 			} else {
-				result[index --] = nums[right] * nums[right ++];
+				result[index --] = nums[right] nums[right ++];
 //				index --;
 //				right --;
 			}

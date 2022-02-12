@@ -1,8 +1,8 @@
 package com.algorithmdiagram;
 
 /*
-* 时间复杂度 O(log n)
-* 队列需要有序
+时间复杂度 O(log n)
+队列需要有序
 */
 
 public class binarySearch {

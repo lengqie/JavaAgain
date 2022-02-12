@@ -2,7 +2,7 @@ package com.leetcode.plan.algorithm.backtracking;
 
 import java.util.*;
 /**
- * 给定一个字符串S，通过将字符串S中的每个字母转变大小写，我们可以获得一个新的字符串。返回所有可能得到的字符串集合。
+ 给定一个字符串S，通过将字符串S中的每个字母转变大小写，我们可以获得一个新的字符串。返回所有可能得到的字符串集合。
 示例：
 输入：S = "a1b2"
 输出：["a1b2", "a1B2", "A1b2", "A1B2"]
@@ -12,7 +12,7 @@ import java.util.*;
 
 输入：S = "12345"
 输出：["12345"]
- * @author lengqie
+ @author lengqie
  *
  */
 public class LetterCasePermutation {

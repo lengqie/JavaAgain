@@ -1,8 +1,8 @@
 package com.algorithmdiagram;
 
 /*
-* 选择排序
-* 时间复杂度 O(N *N)
+选择排序
+时间复杂度 O(N *N)
  */
 
 import java.util.ArrayList;
