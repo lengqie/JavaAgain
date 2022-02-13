@@ -89,7 +89,7 @@ public class PermutationInString {
         int code = 0;
         char[] c = s.toCharArray();
         for (char d : c) {
-			code += ((int) d) ((int)d); 
+			code += ((int) d) * ((int)d); 
 		}
         return code;
     }

@@ -29,12 +29,12 @@ public class SquaresOfaSortedArray {
 		int index = right;
 		int[] result = new int[nums.length];
 		while(left <= right) {
-			if (nums[left] nums[left] > nums[right] nums[right]) {
-				result[index --] = nums[left] nums[left ++];
+			if (nums[left] * nums[left] > nums[right] * nums[right]) {
+				result[index --] = nums[left] * nums[left ++];
 //				index --;
 //				left ++;
 			} else {
-				result[index --] = nums[right] nums[right ++];
+				result[index --] = nums[right] * nums[right ++];
 //				index --;
 //				right --;
 			}
