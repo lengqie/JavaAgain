@@ -9,6 +9,11 @@ package com.leetcode.plan.datastructures.string;
 
 public class ValidAnagram {
     public boolean isAnagram(String s, String t) {
+    	
+        if (s.length() != t.length()) {
+            return false;
+        }
+        // 计数 还可以 排序... Arrays.sotr()
     	int[] count = new int[26];
     	
     	for (int i = 0; i < s.length(); i++) {
