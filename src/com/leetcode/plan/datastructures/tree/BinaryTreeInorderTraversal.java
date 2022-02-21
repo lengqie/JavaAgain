@@ -3,10 +3,10 @@ package com.leetcode.plan.datastructures.tree;
 import java.util.*;
 
 /**
- 给你二叉树的根节点 root ，返回它节点值的 前序 遍历。
+ 给你二叉树的根节点 root ，返回它节点值的 中序 遍历。
  */
 
-public class BinaryTreePreorderTraversal {
+public class BinaryTreeInorderTraversal {
 	
 	 public class TreeNode {
 		     int val;
@@ -20,8 +20,8 @@ public class BinaryTreePreorderTraversal {
 		         this.right = right;
 		     }
 	}
-	// 递归 中后 遍历 类似
-    public List<Integer> preorderTraversal(TreeNode root) {
+	// 递归 前后 遍历 类似
+    public List<Integer> inorderTraversal(TreeNode root) {
     	List<Integer> res = new ArrayList<Integer>();
     	preorder(root,res);
     	return res;
@@ -29,33 +29,31 @@ public class BinaryTreePreorderTraversal {
     public void preorder(TreeNode root,List<Integer> res) {
     	if(root == null)
     		return;
-    	// 先 访问 根节点
-    	res.add(root.val);
-    	// 再 访问 左子树
+    	// 先 访问 左子树
     	preorder(root.left,res);
+    	// 再 访问 根节点
+    	res.add(root.val);
     	// 最后访问 右子树
     	preorder(root.right,res);
     }
     // 迭代 （用栈）
-    public List<Integer> preorderTraversal2(TreeNode root) {
+    public List<Integer> inorderTraversal2(TreeNode root) {
         List<Integer> res = new ArrayList<>();
         if (root == null)
         	return res;
 
         Stack<TreeNode> stack = new Stack<>();
-        
-    	// 先 访问 根节点
-        stack.push(root);
-
-        while (!stack.isEmpty()) {
-            TreeNode curr = stack.pop();
-            res.add(curr.val);
-            //// 再 访问 左子树
-            if (curr.right != null)
-            	stack.push(curr.right);
-         // 最后访问 右子树
-            if (curr.left != null)
-            	stack.push(curr.left);
+        while (root != null || !stack.isEmpty()) {
+        	// 先 访问 左子树
+            while (root != null) {
+                stack.push(root);
+                root = root.left;
+            }
+            TreeNode node = stack.pop();
+            // 再 访问 根节点
+            res.add(node.val);
+            // 最后访问 右子树
+            root = node.right;
         }
         return res;
     }
