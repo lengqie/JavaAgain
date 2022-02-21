@@ -35,4 +35,17 @@ public class ValidParentheses {
         }
         return stack.isEmpty();
     }
+    
+    public boolean isVaild2(String s) {
+    	while( in(s,"()") || in(s,"[]") || in(s,"{}")) {
+    		  s = s.replace("{}", "");
+    		  s = s.replace("[]", "");
+    		  s = s.replace("()", "");
+    	}
+    	return false;
+    }
+    
+    public boolean in(String s,String t) {
+    	return s.indexOf(t) != -1;
+    }
 }
