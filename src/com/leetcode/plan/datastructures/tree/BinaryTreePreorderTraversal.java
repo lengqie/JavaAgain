@@ -50,10 +50,10 @@ public class BinaryTreePreorderTraversal {
         while (!stack.isEmpty()) {
             TreeNode curr = stack.pop();
             res.add(curr.val);
-            //// 再 访问 左子树
+            // 最后访问 右子树 （在栈中 先进后出）
             if (curr.right != null)
             	stack.push(curr.right);
-         // 最后访问 右子树
+            // 再 访问 左子树 （在栈中 后进先出）
             if (curr.left != null)
             	stack.push(curr.left);
         }
