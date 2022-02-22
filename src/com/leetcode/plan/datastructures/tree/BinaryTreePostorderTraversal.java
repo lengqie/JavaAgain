@@ -2,8 +2,6 @@ package com.leetcode.plan.datastructures.tree;
 
 import java.util.*;
 
-import com.leetcode.plan.datastructures.tree.BinaryTreePreorderTraversal.TreeNode;
-
 /**
  给你二叉树的根节点 root ，返回它节点值的 后序 遍历。
  */
