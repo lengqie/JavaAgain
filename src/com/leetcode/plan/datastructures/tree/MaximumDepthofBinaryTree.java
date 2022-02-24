@@ -18,8 +18,8 @@ public class MaximumDepthofBinaryTree {
 	         this.val = val;
 	         this.left = left;
 	         this.right = right;
-	     }
-}
+		 }
+	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
